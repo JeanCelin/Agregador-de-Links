@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --profile-border: #ffffff85;
 }
 .light {
   --text-color: black;
@@ -21,6 +22,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --profile-border: black;
 }
 body {
   /*
@@ -52,6 +54,8 @@ body * {
 
 #profile img {
   width: 112px;
+  border-radius: 50%;
+  border: 3px solid var(--profile-border);
 }
 #profile p {
   font-weight: 500;
